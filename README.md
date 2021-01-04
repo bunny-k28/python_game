@@ -21,4 +21,5 @@
         1. The grid consist of 9 empty boxses.
         2. Enter the row and column no. where you've to place your mark
         3. Mark for player 1 is 'X' and for player 2 is 'O'
-        4. To win the game one of the player have to place his/her mark in 3 continues order. It could be in vertical, horizontal or slant alignment.
+        4. To win the game one of the player have to place his/her mark in 3 continues order. It could be in vertical, 
+           horizontal or slant alignment.
