@@ -23,3 +23,17 @@
         3. Mark for player 1 is 'X' and for player 2 is 'O'
         4. To win the game one of the player have to place his/her mark in 3 continues order. It could be in 
            vertical, horizontal or slant alignment.
+           
+# connect-4
+1. This is a connect-4 game made using python code.
+
+2. This is a sub-basic level program. This program has the ability to decide the winner. Just place your marks and enjoy the game.
+
+3. Rules:-
+
+        1. The grid consist of 9x9 empty places.
+        2. Enter the row and column no. for placing your mark.
+        3. This game starts from the bottom row line. Which means if you'll enter the row no. as 1 then your mark will place at the bottom last row.
+        4. In this game rows are horizontally & columns are verticlly aligned.
+        5. Enter the no. of pieces and player's name and start playing your game.
+        6. The minimum no. of pieces you can choose is 4.
