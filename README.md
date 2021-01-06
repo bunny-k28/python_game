@@ -33,7 +33,8 @@
 
         1. The grid consist of 9x9 empty places.
         2. Enter the row and column no. for placing your mark.
-        3. This game starts from the bottom row line. Which means if you'll enter the row no. as 1 then your mark will place at the bottom last row.
+        3. This game starts from the bottom row line. Which means if you'll enter the row no. 
+           as 1 then your mark will place at the bottom last row.
         4. In this game rows are horizontally & columns are verticlly aligned.
         5. Enter the no. of pieces and player's name and start playing your game.
         6. The minimum no. of pieces you can choose is 4.
