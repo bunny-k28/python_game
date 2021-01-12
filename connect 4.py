@@ -30,12 +30,13 @@ def winner(value):
                 p2_check_list.append(lane)
 
     # print(check_list)
-    if (p1_check_list == sorted(p1_check_list)) and (len(p1_check_list) == 4):
+    if (p1_check_list == sorted(p1_check_list) or p1_check_list == sorted(p1_check_list, reverse= True)) and (len(p1_check_list) >= 4):
         print(f'{p1_name} is the winner of this game, congo!')
-    elif (p2_check_list == sorted(p2_check_list)) and (len(p2_check_list) == 4):
+        return True
+
+    elif (p2_check_list == sorted(p2_check_list) or p2_check_list == sorted(p2_check_list, reverse= True)) and (len(p2_check_list) >= 4):
         print(f'{p2_name} is the winner of this game, congo!')
-    else:
-        print('no one is the winner')
+        return False
 
 
 markLib = [
@@ -52,7 +53,7 @@ markLib = [
 # game info inputs
 player = 1
 flag = 1
-finish_value = int(input('with how many pieces you want to play the game:- '))
+finish_value = int(input('how many turns you both want to play:- '))
 if finish_value < 4:
     print('required more than this')
     finish_value = int(input('with how many pieces you want to play the game:- '))
@@ -69,8 +70,9 @@ p2_color = colored(' ', None, 'on_yellow')
 
 # game info
 print('\n\t\t\t\t\tSTART')
-print('Game info:-\n\t\t1.Place your marks by entering the row and column number.\n\t\t2.Here rows are '
-      'horizontally and columns are vertically placed.\n\t\t3.The first player to get 4 across or '
+print('Game info:-\n\t\t1.Place your marks by entering the row and column'
+      ' number.\n\t\t2.Here rows are horizontally and columns are '
+      'vertically placed.\n\t\t3.The first player to get 4 across or '
       'diagonal should win!\n\t\t4.This game starts from bottom.\n')
 
 
@@ -84,13 +86,17 @@ while flag <= finish_value * 2:
     if player == 1:
         markLib[-rowNum][columnNum - 1] = p1_color
         grid(markLib)
+        if winner(markLib) == True:
+            break
         player += 1
 
     else:
         markLib[-rowNum][columnNum - 1] = p2_color
         grid(markLib)
+        if winner(markLib) == False:
+            break
         player -= 1
 
     flag += 1
-
+    
 winner(markLib)
