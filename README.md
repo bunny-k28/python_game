@@ -55,5 +55,5 @@
         7. The game will end up if the player guesses the correct word within his/her given lifes or if 
            the player looses all its lifes/turns because of wrong guesses
            
-        # note:- If you'd rather not do "hangman" because of the violence aspect, that's fine! 
-                 Please make "snowman" instead. You can see an example in the wikihow link (https://www.wikihow.com/Play-Hangman).
+4. NOTE:- If you'd rather not do "hangman" because of the violence aspect, that's fine! 
+          Please make "snowman" instead. You can see an example in the wikihow link (https://www.wikihow.com/Play-Hangman).
